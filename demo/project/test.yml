@@ -1,7 +1,9 @@
 ---
-- hosts: localhost
-  gather_facts: false
+- hosts: all
+  gather_facts: true
 
   tasks:
     - debug:
         msg: "Hello, Receptor!"
+
+    - shell: hostname

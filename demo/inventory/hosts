@@ -1,1 +1,11 @@
-localhost
+[receptor]
+hsaito-receptor00
+hsaito-receptor01
+hsaito-receptor02
+hsaito-receptor03
+hsaito-receptor04
+hsaito-receptor05
+hsaito-receptor06
+
+[receptor:vars]
+ansible_user = ec2-user
