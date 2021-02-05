@@ -19,7 +19,7 @@ $ ./bootstrap.sh
 
 5. modify receptor configuration file ($HOSTNAME.conf) on each node
 
-6. start-up receptor
+6. start-up receptor on each node
 ```
 $ ./start-receptor.sh
 ```
