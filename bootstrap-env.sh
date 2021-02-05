@@ -1,6 +1,6 @@
 #!/bin/sh
 
-RECEPTOR_NODES="hsaito-rp00 hsaito-rp01 hsaito-rp02 hsaito-rp03 hsaito-rp04 hsaito-rp05 hsaito-rp06"
+RECEPTOR_NODES="rp00 rp01 rp02 rp03 rp04 rp05 rp06"
 
 #
 # EOF
