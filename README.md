@@ -1,3 +1,11 @@
+# Demo system design
+
+![demosystem](images/system_diagram.png)
+
+- **rp00**: control node to send ansible-runner job
+- **rp0[1234]**: routing node
+- **rp0[56]**: worker node to receive and launch ansible-runner and ansible-playbook
+
 # Building Receptor Demo Environment
 
 1. git clone receptor-demo on each node
