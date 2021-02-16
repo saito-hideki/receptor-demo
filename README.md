@@ -32,7 +32,7 @@ $ ./bootstrap.sh
 $ ./start-receptor.sh
 ```
 
-## Install Receptor
+## Install Receptor on all nodes
 
 You can follow the following steps to build receptor server and client packages:
 
@@ -61,6 +61,18 @@ $ pip3 install --upgrade --user click
 
 *Note: RHEL8 officially provide python3-click package, however the version of this is old and receptorctl package needs the latest version click module. Therefore, you may need to upgrade click module after install receptorctl using by pip3.*
 
+## Install ansible and ansible-runner v2 to rp00,05,06:
+
+Install ansible-runner from the source code.
+
+```
+$ pip3 install --user ansible==2.10.5 ansible-base==2.10.5
+$ git clone https://github.com/ansible/ansible-runner.git
+$ cd ansible-runner
+$ pip3 install --user poetry
+$ make dist
+$ pip3 install --user dist/ansible-runner-2.0.0.tar.gz
+```
 
 # References
 - https://github.com/project-receptor/sample-configs
