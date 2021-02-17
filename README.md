@@ -74,5 +74,21 @@ $ make dist
 $ pip3 install --user dist/ansible-runner-2.0.0.tar.gz
 ```
 
+# How to check the status of receptor network(rp00):
+
+You can check the status of receptor service using `receptorctl` command:
+
+```
+$ export RECEPTORCTL_SOCKET=/path/to/receptor.sock
+$ receptorctl status
+$ receptorctl ping rp05
+$ receptorctl traceroute rp05
+```
+
+Also, you can launch Ansible Playbook on remote node(rp05) using `ansible-runner` v2.0.0:
+
+```
+$ ansible-runner transmit demo -p test.yml | receptorctl work submit runner --node rp05 --follow --rm --payload - --tls-client rp00_client | ansible-runner process demo
+```
 # References
 - https://github.com/project-receptor/sample-configs
